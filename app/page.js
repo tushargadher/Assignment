@@ -1,6 +1,9 @@
+"use client"; //by default all component in nextjs is server componet so using this we can make this component clinet componet
 import LoginImg from "../loginImg.png";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 const Login = () => {
+  const { push } = useRouter();
   return (
     <>
       <div className="container h-screen bg-slate-100 flex justify-center items-center">
@@ -13,7 +16,7 @@ const Login = () => {
           </div>
           {/* right side form */}
           <div className=" h-[484px] w-[370px] bg-white absolute top-[40px] left-[490px] flex flex-col justify-around ">
-            <div className=" h-[57px] w-[261px] mb-[20px]">
+            <div className=" h-[57px] w-[265px] mb-[20px]">
               <h1 className="text-[22px] font-semibold">Login</h1>
               <span className="text-[16px]">
                 Donec tortor quam at duis tortor.
@@ -50,7 +53,12 @@ const Login = () => {
                 </span>
               </div>
               {/* login button */}
-              <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded w-[370px] text-[16px] font-medium">
+              <button
+                class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded w-[370px] text-[16px] font-medium "
+                onClick={() => {
+                  push("/dashboard");
+                }}
+              >
                 Login
               </button>
             </div>

@@ -1,7 +1,8 @@
+import Navbar from "@/app/Component/Navbar";
 const Dashboard = () => {
   return (
     <>
-      <div>Hello this is dashboard of our application</div>
+      <Navbar />
     </>
   );
 };
