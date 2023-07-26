@@ -1,4 +1,7 @@
 import Form from "./Form";
+import Image from "next/image";
+import English from "../../Images/english.png";
+import Turkish from "../../Images/turkish.png";
 const FormComponent = () => {
   return (
     <>
@@ -12,12 +15,14 @@ const FormComponent = () => {
             augue enim.
           </p>
         </div>
-        <div>
-          <button class="border border-amber-600 bg-amber-200 text-neutral-800 rounded w-[101px] h-[35px] text-base font-normal mt-4 mr-3">
+        <div className=" w-[212px] h-[35px] mt-4 flex">
+          <button class="border border-amber-600 bg-amber-200 text-neutral-800 rounded w-[101px] h-[35px] text-base font-normal  mr-3 flex items-center justify-evenly">
+            <Image src={English} className="h-[25px] w-[25px]" />
             English
           </button>
 
-          <button class="border border-neutral-300 bg-white text-neutral-800 rounded w-[101px] h-[35px] text-base font-normal ">
+          <button class="border border-neutral-300 bg-white text-neutral-800 rounded w-[101px] h-[35px] text-base font-normal flex items-center justify-evenly">
+            <Image src={Turkish} className="h-[25px] w-[25px]" />
             Turkish
           </button>
         </div>

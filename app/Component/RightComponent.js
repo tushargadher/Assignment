@@ -2,6 +2,7 @@ import InnerNav from "./InnerNav";
 import InfoBox from "./InfoBox";
 import TableComponent from "./TableComponent";
 import FormComponent from "./FormComponent";
+import FormGroup from "./FormGroup";
 const RightComponent = () => {
   return (
     <>
@@ -11,6 +12,7 @@ const RightComponent = () => {
           <InfoBox />
           <TableComponent />
           <FormComponent />
+          <FormGroup/>
         </div>
       </div>
     </>
