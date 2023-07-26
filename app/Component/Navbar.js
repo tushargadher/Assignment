@@ -1,8 +1,10 @@
 import Link from "next/link";
+import Image from "next/image";
+import profile from "../../profie.png";
 const Navbar = () => {
   return (
     <>
-      <nav className="bg-neutral-900 h-[55px] flex">
+      <nav className="bg-neutral-900 h-[55px]  flex">
         <div className="container mx-auto flex justify-between items-center">
           <ul className="flex space-x-4 text-white w-[408px] absolute left-[30px] text-sm ">
             <li>
@@ -87,6 +89,11 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
+        </div>
+
+        <div className="bg-white h-[36px] w-[183px] absolute top-[9px] left-[1327px] rounded-[36px] flex items-center">
+          <Image src={profile} width="30px" height="30px"  className="ml-1" />
+          <span className="text-[14px] font-normal ml-1">İsmail İhsan Bülbül</span>
         </div>
       </nav>
     </>
