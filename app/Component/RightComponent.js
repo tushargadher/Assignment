@@ -1,7 +1,14 @@
+import InnerNav from "./InnerNav";
+import InfoBox from "./InfoBox";
 const RightComponent = () => {
   return (
     <>
-      <h1>RightComponent</h1>
+      <div className="bg-gray-100">
+        <InnerNav />
+        <div className="m-8">
+          <InfoBox />
+        </div>
+      </div>
     </>
   );
 };
