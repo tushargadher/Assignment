@@ -56,7 +56,7 @@ const Login = () => {
               <button
                 class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded w-[370px] text-[16px] font-medium "
                 onClick={() => {
-                  push("/dashboard");
+                  push("/dashboard", undefined, { shallow: true });
                 }}
               >
                 Login
