@@ -4,8 +4,8 @@ import profile from "../../profie.png";
 const Navbar = () => {
   return (
     <>
-      <nav className="bg-neutral-900 h-[55px]  flex">
-        <div className="container mx-auto flex justify-between items-center">
+      <nav className="bg-neutral-900 h-[55px] w-[472vw] lg:w-screen flex">
+        <div className="container mx-auto flex justify-between items-center lg:w-full">
           <ul className="flex space-x-4 text-white w-[408px] absolute left-[30px] text-sm ">
             <li>
               <Link href="/" className="flex items-center">
@@ -27,7 +27,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="flex items-center">
+              <Link href="/#" className="flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -46,7 +46,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/about" className="flex items-center">
+              <Link href="/#" className="flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -65,7 +65,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/setting" className="flex items-center">
+              <Link href="/#" className="flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

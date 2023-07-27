@@ -109,7 +109,7 @@ const FormGroup = () => {
               />
             </div>
             {/* forth row */}
-            <button className="w-[280px] h-[44px] mb-6 bg-blue-600 text-base text-white rounded-[5px]">
+            <button className="w-[280px] h-11 mb-6 bg-blue-600 text-base text-white rounded-[5px]">
               Button title
             </button>
           </div>

@@ -6,19 +6,19 @@ const Login = () => {
   const { push } = useRouter();
   return (
     <>
-      <div className="container h-screen bg-slate-100 flex justify-center items-center">
+      <div className="container h-screen bg-green-500 flex  justify-center items-center lg:h-screen lg:bg-slate-100">
         {/* inner box */}
 
-        <div className="overflow-hidden w-[900px] h-[564px] rounded-[10px] flex relative bg-white">
+        <div className="overflow-hidden lg:w-[900px] lg:h-[564px] rounded-[10px] flex relative bg-white">
           {/* left side image*/}
-          <div className=" h-full w-[50%] ">
+          <div className=" h-96 lg:w-[50%] lg:h-full">
             <Image src={LoginImg} alt="mountain" />
           </div>
           {/* right side form */}
-          <div className=" h-[484px] w-[370px] bg-white absolute top-[40px] left-[490px] flex flex-col justify-around ">
-            <div className=" h-[57px] w-[265px] mb-[20px]">
-              <h1 className="text-[22px] font-semibold">Login</h1>
-              <span className="text-[16px]">
+          <div className=" bg-white h-96 lg:h-[484px] lg:w-[370px] lg:absolute  lg:top-[40px]  flex flex-col justify-around lg:left-[490px]">
+            <div className=" lg:h-[57px] lg:w-[265px] lg:mb-[20px]">
+              <h1 className="lg:text-[22px] font-semibold">Login</h1>
+              <span className=" text-xs lg:text-[16px]">
                 Donec tortor quam at duis tortor.
               </span>
             </div>
@@ -26,7 +26,7 @@ const Login = () => {
             <div className=" h-[265px] w-[370px]">
               {/* input email */}
               <label class="block  h-[70px] mb-[5px]">
-                <span class="block text-sm font-medium text-slate-700 text-[14px] text-neutral-800">
+                <span class="block text-sm font-medium  text-[14px] text-neutral-800">
                   E-mail
                 </span>
                 <input
