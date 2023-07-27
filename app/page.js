@@ -16,38 +16,42 @@ const Login = () => {
           </div>
           {/* right side form */}
           <div className="w-1/2 p-2">
-            <div className="my-1">
+            <div className="mt-1 mb-2">
               <p className="text-xs">Login</p>
               <p className="text-[8px]">Donec tortor quam at duis tortor.</p>
             </div>
             <div>
-              <label>
-                <span class="block text-xs font-medium  text-neutral-800">
-                  E-mail
-                </span>
-                <input
-                  type="email"
-                  value="Placeholder Content"
-                  class="mt-1 block w-full px-1  bg-white border border-slate-300 rounded-sm text-sm shadow-sm placeholder-slate-400 text-neutral-300"
-                />
-              </label>
-              <label>
-                <span class="block text-xs font-medium  text-neutral-800">
-                  Password
-                </span>
-                <input
-                  type="email"
-                  value="Placeholder Content"
-                  class="mt-1 block w-full px-1  bg-white border border-slate-300 rounded-sm text-sm shadow-sm placeholder-slate-400 text-neutral-300"
-                />
-              </label>
+              <div className="mb-1">
+                <label>
+                  <span class="block text-[10px] font-medium  text-neutral-800">
+                    E-mail
+                  </span>
+                  <input
+                    type="email"
+                    value="Placeholder Content"
+                    class="mt-1 block w-full px-1  bg-white border border-slate-300 rounded-sm text-sm shadow-sm placeholder-slate-400  text-neutral-300"
+                  />
+                </label>
+              </div>
+              <div>
+                <label>
+                  <span class="block text-[10px] font-medium  text-neutral-800">
+                    Password
+                  </span>
+                  <input
+                    type="email"
+                    value="Placeholder Content"
+                    class="mt-1 block w-full px-1  bg-white border border-slate-300 rounded-sm text-sm shadow-sm placeholder-slate-400 text-neutral-300"
+                  />
+                </label>
+              </div>
               <div className="flex  justify-end flex-row mt-1 mb-2">
                 <span className="text-[10px] text-neutral-600 font-semibold">
                   Forgot password?
                 </span>
               </div>
               <button
-                class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-4 rounded-[5px] w-full text-xs font-medium "
+                class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-4 rounded-[5px] w-full text-[10px] font-medium "
                 onClick={() => {
                   push("/dashboard", undefined, { shallow: true });
                 }}
@@ -56,11 +60,11 @@ const Login = () => {
               </button>
               <div>
                 <div className="my-2 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-200 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-200">
-                  <p class="mx-4 mb-0 text-center text-neutral-500 text-sm">
+                  <p class="mx-4 mb-0 text-center text-neutral-500 text-[10px]">
                     or
                   </p>
                 </div>
-                <button class="border border-neutral-600 bg-white text-neutral-600 py-1 px-4 rounded w-full text-xs font-medium ">
+                <button class="border border-neutral-600 bg-white text-neutral-600 py-1 px-4 rounded w-full text-[10px] font-medium ">
                   Register now
                 </button>
               </div>
