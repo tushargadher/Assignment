@@ -4,8 +4,8 @@ import profile from "../../profie.png";
 const Navbar = () => {
   return (
     <>
-      <nav className="bg-neutral-900 h-[55px] w-[472vw] lg:w-screen flex">
-        <div className="container mx-auto flex justify-between items-center lg:w-full">
+      <nav className="bg-neutral-900 h-[55px]  flex">
+        <div className="container mx-auto flex justify-between items-center">
           <ul className="flex space-x-4 text-white w-[408px] absolute left-[30px] text-sm ">
             <li>
               <Link href="/" className="flex items-center">

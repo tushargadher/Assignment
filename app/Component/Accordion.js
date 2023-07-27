@@ -8,7 +8,7 @@ const Accordion = ({ title }) => {
     <>
       <div className="border-t-2 border-neutral-900 w-full px-6">
         <button
-          class="flex items-center justify-between w-full h-[54px] text-left text-white"
+          class="flex items-center justify-between w-full h-14 text-left text-white"
           onClick={() => {
             setShow(!show);
           }}
